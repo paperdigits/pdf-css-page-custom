@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<target name="dita2[TRANSTYPE]" depends="dita2[TRANSTYPE].init, dita2pdf-css-page"/>
+
+	<target name="dita2[TRANSTYPE].init">
+		<property name="xsl.file" value="${dita.plugin.[PLUGIN_NAME].dir}${file.separator}xsl${file.separator}overrides.xsl"/>
+		<property name="rocks.xml.pdf.css.page" value="true"/>
+	</target>
+</project>

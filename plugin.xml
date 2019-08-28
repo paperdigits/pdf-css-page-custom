@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="[PLUGIN_NAME]">
+  <!-- Require the XML Rocks plugin -->
+  <require plugin="rocks.xml.pdf.css.page" />
+
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+  
+  <!-- Give the transform a name --> 
+  <feature extension="dita.conductor.transtype.check" value="[TRANSTYPE]"/>
+  <feature extension="dita.transtype.print" value="[TRANSTYPE]"/>
+</plugin>
