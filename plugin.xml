@@ -8,4 +8,7 @@
   <!-- Give the transform a name --> 
   <feature extension="dita.conductor.transtype.check" value="[TRANSTYPE]"/>
   <feature extension="dita.transtype.print" value="[TRANSTYPE]"/>
+  
+  <!-- Import the build file that defines the default CSS style -->
+  <feature extension="ant.import" file="build_pdf-css-page-custom.xml"/>
 </plugin>
