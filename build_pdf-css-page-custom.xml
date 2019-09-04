@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-
- <property name="css.file"
+    <target name="pdf-css-page-custom" depends="pdf-css-page-custom.init, dita2pdf-css-page" />
+    <target name="pdf-css-page-custom.init">
+        <property name="css.file"
               value="${dita.plugin.[PLUGIN_NAME].dir}${file.separator}css${file.separator}style.css"/>
-  
+    </target>
 </project>
